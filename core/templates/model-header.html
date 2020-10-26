@@ -1,0 +1,63 @@
+<title>Controle  de Estoque</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<style>
+    #menu a{
+       background-color: white;
+       color: #3875d7;
+        padding-bottom: 5px;
+        margin-bottom: 5px;
+    }
+    #menu a:hover{
+        color: #003366;
+        background-color: #3875d7;
+        border-bottom: white solid 1px;
+    }
+    .jumbotron.header{
+        text-align: center;
+        background-color: #3875d7;
+        color:white;
+        background-image: linear-gradient(#3875d7, #003366);
+    }
+
+</style>
+
+
+        <div class="jumbotron header">
+            <h1>Controle de Estoque</h1>
+            <p>Controle dos equipamento Spassu</p>
+
+        </div>
+
+       <!-- <div class="text-right mr-4">
+            <a href="/logout/">Sair</a>
+        </div>
+        -->
+
+
+     <div id="menu">
+        <ul class="nav ml-4">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Cadastrar Equipamento</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Entregar Equipamento</a>
+            <!--Aqui será cadstrado o profissional e entregue o equipamento-->
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Devolver Equipamento</a>
+            <!--Aqui será removido o profissional e devolver o equipamento-->
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="estoque/">Estoque</a>
+        </li>
+         <li class="nav-item logout text-right mr-4">
+            <a class="nav-link" href="/logout/">Sair</a>
+        </li>
+      </ul>
+    </div>

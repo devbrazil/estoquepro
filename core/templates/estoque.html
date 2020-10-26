@@ -1,0 +1,12 @@
+{% extends "model-page-estoque.html" %}
+
+{% block content %}
+        {% for eq in equipamentos %}
+            {{ eq.patrimonio }}
+            {{ eq.modelo }}
+            {{ eq.numeroserie}}
+            {{ eq.especificacao}}
+            {{ eq.preco}}
+            {{ eq.situacao }}
+        {%endfor%}
+{% endblock %}
