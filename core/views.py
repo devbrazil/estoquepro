@@ -12,8 +12,8 @@ def index(request):
 
 
 def list_estoque(request):
-    equipametos = Equipamento.objects.filter()
-    return render(request, 'estoque.html', {'equipamento': equipametos})
+    equipamento = Equipamento.objects.filter()
+    return render(request, 'estoque.html', {'equipamento': equipamento})
 
 
 def logout_user(request):

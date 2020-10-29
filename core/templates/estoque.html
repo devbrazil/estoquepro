@@ -1,12 +1,36 @@
-{% extends "model-page-estoque.html" %}
+{% extends "model-estoque.html" %}
+
+{% block style %}
+    <style>
+        .col-sm-12{
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+        }
+
+    </style>
+{% endblock %}
 
 {% block content %}
-        {% for eq in equipamentos %}
-            {{ eq.patrimonio }}
-            {{ eq.modelo }}
-            {{ eq.numeroserie}}
-            {{ eq.especificacao}}
-            {{ eq.preco}}
-            {{ eq.situacao }}
-        {%endfor%}
+
+
+     <div class="container">
+        <div class="row">
+            {% for eq in equipamento %}
+
+            <div class="col-sm-12">
+
+                <p>{{ eq.patrimonio }}
+                {{ eq.modelo }}
+                {{ eq.numeroserie }}
+                {{ eq.especificacao }}
+                {{ eq.preco }}
+                {{ eq.situacao }}
+                </p>
+
+            </div>
+            {% endfor %}
+        </div>
+
+    </div>
+
+
 {% endblock %}
